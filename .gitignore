@@ -1,4 +1,4 @@
-# REVIEWED
+# REVIEWED - 02
 # dependencies
 /node_modules
 package-lock.json
@@ -17,7 +17,11 @@ package-lock.json
 .DS_Store
 
 # env files
+.env
 .env.*
 
 # typescript
 next-env.d.ts
+
+# payload
+payload-types.ts
