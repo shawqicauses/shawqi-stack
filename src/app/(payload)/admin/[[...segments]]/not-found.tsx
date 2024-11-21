@@ -1,10 +1,11 @@
-// REVIEWED
-/* THIS FILE WAS GENERATED AUTOMATICALLY BY PAYLOAD. */
+// REVIEWED - 01
 /* DO NOT MODIFY IT BECAUSE IT COULD BE REWRITTEN AT ANY TIME. */
+/* THIS FILE WAS GENERATED AUTOMATICALLY BY PAYLOAD. */
+import { NotFoundPage, generatePageMetadata } from "@payloadcms/next/views";
 import type { Metadata } from "next";
 
 import config from "@payload-config";
-import { NotFoundPage, generatePageMetadata } from "@payloadcms/next/views";
+
 import { importMap } from "../importMap";
 
 type Args = {

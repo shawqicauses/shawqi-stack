@@ -1,4 +1,4 @@
-// REVIEWED - 02
+// REVIEWED - 03
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { PropsWithChildren } from "react";
@@ -11,10 +11,12 @@ export const metadata: Metadata = {
   description: "Created by @shawqicauses.",
 };
 
-export default function RootLayout({ children }: PropsWithChildren) {
+const RootLayout = function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
   );
-}
+};
+
+export default RootLayout;

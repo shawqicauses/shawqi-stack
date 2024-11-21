@@ -1,6 +1,7 @@
-// REVIEWED
-import configPromise from "@payload-config";
+// REVIEWED - 01
 import { getPayload } from "payload";
+
+import configPromise from "@payload-config";
 
 export const GET = async () => {
   const payload = await getPayload({

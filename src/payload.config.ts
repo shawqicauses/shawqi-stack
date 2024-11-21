@@ -1,10 +1,11 @@
-// REVIEWED
+// REVIEWED - 01
+import path from "path";
+import { fileURLToPath } from "url";
+
 import { mongooseAdapter } from "@payloadcms/db-mongodb";
 import { lexicalEditor } from "@payloadcms/richtext-lexical";
-import path from "path";
 import { buildConfig } from "payload";
 import sharp from "sharp";
-import { fileURLToPath } from "url";
 
 import { Media } from "./collections/Media";
 import { Users } from "./collections/Users";

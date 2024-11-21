@@ -1,4 +1,7 @@
-// REVIEWED - 02
-export default function Home() {
+// REVIEWED - 03
+
+const HomePage = function HomePage() {
   return <main>Shawqi Stack</main>;
-}
+};
+
+export default HomePage;
