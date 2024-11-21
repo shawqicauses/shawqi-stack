@@ -1,5 +1,5 @@
 {
-  "reviewed": "true - 04",
+  "reviewed": "true - 05",
   "name": "shawqi-stack",
   "version": "0.1.0",
   "private": true,
@@ -7,7 +7,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@floating-ui/react": "0.26.28",
@@ -40,6 +41,7 @@
     "eslint-plugin-react-hooks": "5.0.0",
     "postcss": "8",
     "prettier": "3.3.3",
+    "prettier-plugin-tailwindcss": "0.6.9",
     "tailwindcss": "3.4.1",
     "typescript": "5"
   }

@@ -1,4 +1,4 @@
-// REVIEWED - 01
+// REVIEWED - 02
 /* THIS FILE WAS GENERATED AUTOMATICALLY BY PAYLOAD. */
 /* DO NOT MODIFY IT BECAUSE IT COULD BE REWRITTEN AT ANY TIME. */
 import "@payloadcms/next/css";
@@ -16,7 +16,7 @@ type Args = {
 };
 
 const serverFunction: ServerFunctionClient = async function serverFunction(
-  args
+  args,
 ) {
   "use server";
 
@@ -32,8 +32,7 @@ const Layout = function Layout({ children }: Args) {
     <RootLayout
       config={config}
       importMap={importMap}
-      serverFunction={serverFunction}
-    >
+      serverFunction={serverFunction}>
       {children}
     </RootLayout>
   );
