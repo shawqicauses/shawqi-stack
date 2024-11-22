@@ -1,5 +1,5 @@
 {
-  "reviewed": "true - 05",
+  "reviewed": "true - 06",
   "name": "shawqi-stack",
   "version": "0.1.0",
   "private": true,
@@ -16,13 +16,18 @@
     "@payloadcms/next": "3.0.2",
     "@payloadcms/payload-cloud": "3.0.2",
     "@payloadcms/richtext-lexical": "3.0.2",
+    "class-variance-authority": "0.7.0",
+    "clsx": "2.1.1",
     "graphql": "16.9.0",
+    "lucide-react": "0.460.0",
     "next": "15.0.3",
     "payload": "3.0.2",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
     "react-onclickoutside": "6.13.1",
-    "sharp": "0.33.5"
+    "sharp": "0.33.5",
+    "tailwind-merge": "2.5.4",
+    "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
     "@types/node": "20",
