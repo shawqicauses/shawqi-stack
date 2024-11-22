@@ -1,4 +1,4 @@
-// REVIEWED - 02
+// REVIEWED - 03
 
 {
   // "parser": "@typescript-eslint/parser",
@@ -39,6 +39,7 @@
     "prefer-arrow-callback": "error",
 
     "import/extensions": ["error", { "ts": "never", "tsx": "never" }],
+    "import/no-extraneous-dependencies": "off",
     "import/prefer-default-export": "off",
     "import/order": [
       "error",
