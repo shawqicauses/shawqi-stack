@@ -1,4 +1,4 @@
-// REVIEWED - 02
+// REVIEWED - 03
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
 import colors from "tailwindcss/colors";
@@ -51,11 +51,35 @@ export default {
         border: "rgb(var(--border) / <alpha-value>)",
         input: "rgb(var(--input) / <alpha-value>)",
         ring: "rgb(var(--ring) / <alpha-value>)",
+        sidebar: {
+          "DEFAULT": "rgb(var(--sidebar-background))",
+          "foreground": "rgb(var(--sidebar-foreground))",
+          "primary": "rgb(var(--sidebar-primary))",
+          "primary-foreground": "rgb(var(--sidebar-primary-foreground))",
+          "accent": "rgb(var(--sidebar-accent))",
+          "accent-foreground": "rgb(var(--sidebar-accent-foreground))",
+          "border": "rgb(var(--sidebar-border))",
+          "ring": "rgb(var(--sidebar-ring))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
@@ -83,6 +107,14 @@ export default {
           "--border": toRGB(colors.zinc["200"]),
           "--input": toRGB(colors.zinc["200"]),
           "--ring": toRGB(colors.zinc["950"]),
+          "--sidebar-background": toRGB(colors.zinc["50"]),
+          "--sidebar-foreground": toRGB(colors.zinc["700"]),
+          "--sidebar-primary": toRGB(colors.zinc["900"]),
+          "--sidebar-primary-foreground": toRGB(colors.zinc["50"]),
+          "--sidebar-accent": toRGB(colors.zinc["100"]),
+          "--sidebar-accent-foreground": toRGB(colors.zinc["900"]),
+          "--sidebar-border": toRGB(colors.zinc["300"]),
+          "--sidebar-ring": toRGB(colors.zinc["950"]),
           "--radius": "0.5rem",
         },
 
@@ -106,6 +138,14 @@ export default {
           "--border": toRGB(colors.zinc["800"]),
           "--input": toRGB(colors.zinc["800"]),
           "--ring": toRGB(colors.zinc["300"]),
+          "--sidebar-background": toRGB(colors.zinc["900"]),
+          "--sidebar-foreground": toRGB(colors.zinc["100"]),
+          "--sidebar-primary": toRGB(colors.zinc["50"]),
+          "--sidebar-primary-foreground": toRGB(colors.zinc["900"]),
+          "--sidebar-accent": toRGB(colors.zinc["800"]),
+          "--sidebar-accent-foreground": toRGB(colors.zinc["100"]),
+          "--sidebar-border": toRGB(colors.zinc["800"]),
+          "--sidebar-ring": toRGB(colors.zinc["300"]),
         },
       });
     }),
